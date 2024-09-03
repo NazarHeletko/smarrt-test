@@ -1,0 +1,43 @@
+.header {
+    height: 60px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo span {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-size: 10px;
+}
+.git {
+    display: flex;
+    align-items: center;
+}
+.git img {
+    height: 44px;
+}
+@media only screen and (max-width: 1200px) {
+    .logo img {
+        height: 30px;
+    }
+    .git img {
+        height: 30px;
+    }
+    .header {
+        height: 48px;
+    }
+}
