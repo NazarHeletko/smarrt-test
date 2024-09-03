@@ -60,7 +60,9 @@ const FilterSection = () => {
           setInputValue({ ...inputValue, phone: e.target.value })
         }
       />
-      <div className={styles.broom}>
+      <div className={styles.broom} onClick={() => {
+        setInputValue({name:'',username:'',email:'',phone:''});
+      }}>
         <img src={broom} alt="clear" />
       </div>
     </div>
